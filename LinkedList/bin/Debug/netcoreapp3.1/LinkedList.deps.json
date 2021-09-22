@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LinkedList/1.0.0": {
+        "dependencies": {
+          "CustomListLib": "1.0.0"
+        },
+        "runtime": {
+          "LinkedList.dll": {}
+        }
+      },
+      "CustomListLib/1.0.0": {
+        "runtime": {
+          "CustomListLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LinkedList/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomListLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

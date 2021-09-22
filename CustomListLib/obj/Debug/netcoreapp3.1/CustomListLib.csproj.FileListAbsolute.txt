@@ -1,0 +1,7 @@
+D:\visual studio проекты\CustomListLib\bin\Debug\netcoreapp3.1\CustomListLib.deps.json
+D:\visual studio проекты\CustomListLib\bin\Debug\netcoreapp3.1\CustomListLib.dll
+D:\visual studio проекты\CustomListLib\bin\Debug\netcoreapp3.1\CustomListLib.pdb
+D:\visual studio проекты\CustomListLib\obj\Debug\netcoreapp3.1\CustomListLib.AssemblyInfoInputs.cache
+D:\visual studio проекты\CustomListLib\obj\Debug\netcoreapp3.1\CustomListLib.AssemblyInfo.cs
+D:\visual studio проекты\CustomListLib\obj\Debug\netcoreapp3.1\CustomListLib.dll
+D:\visual studio проекты\CustomListLib\obj\Debug\netcoreapp3.1\CustomListLib.pdb
