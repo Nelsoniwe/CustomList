@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj": {}
+    "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj": {}
   },
   "projects": {
-    "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj": {
+    "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj",
+        "projectUniqueName": "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj",
         "projectName": "CustomListLib",
-        "projectPath": "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj",
+        "projectPath": "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj",
         "packagesPath": "C:\\Users\\Денис\\.nuget\\packages\\",
-        "outputPath": "D:\\visual studio проекты\\CustomListLib\\obj\\",
+        "outputPath": "D:\\visual studio проекты\\CustomList\\CustomListLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Денис\\AppData\\Roaming\\NuGet\\NuGet.Config",

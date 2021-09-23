@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\visual studio проекты\\LinkedList\\LinkedList.csproj",
+      "projectUniqueName": "D:\\visual studio проекты\\CustomList\\LinkedList\\LinkedList.csproj",
       "projectName": "LinkedList",
-      "projectPath": "D:\\visual studio проекты\\LinkedList\\LinkedList.csproj",
+      "projectPath": "D:\\visual studio проекты\\CustomList\\LinkedList\\LinkedList.csproj",
       "packagesPath": "C:\\Users\\Денис\\.nuget\\packages\\",
-      "outputPath": "D:\\visual studio проекты\\LinkedList\\obj\\",
+      "outputPath": "D:\\visual studio проекты\\CustomList\\LinkedList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Денис\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj": {
-              "projectPath": "D:\\visual studio проекты\\CustomListLib\\CustomListLib.csproj"
+            "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj": {
+              "projectPath": "D:\\visual studio проекты\\CustomList\\CustomListLib\\CustomListLib.csproj"
             }
           }
         }

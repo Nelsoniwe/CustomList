@@ -9,24 +9,40 @@ namespace LinkedList
         static void Main(string[] args)
         {
 
-            CustomList<int> myList = new CustomList<int>(new List<int> { 1, 4, 6, 3, 5 });
+            CustomList<int> myList = new CustomList<int>(new List<int> { 1, 2, 3, 4, 5 });
             myList.Notify += mes => Console.WriteLine(mes);
-            Console.WriteLine("Stack is created.");
+
             for (int i = 0; i < myList.Count; i++)
             {
-                Console.WriteLine(myList[i]);
+                Console.Write(myList[i]+" ");
             }
-            
-            //myList.Push(0);
-            //int FirstElement = myList.Peek();
-            //Console.WriteLine($"First element in the stack is: {FirstElement}");
-            //int ElementToDelete = myList.Pop();
+            Console.WriteLine();
 
-            //int[] Array = new int[10];
-            //myList.CopyTo(Array, 2);
+            myList.Add(8);
+            Console.WriteLine();
 
-            //int[] Array2 = myList.ToArray();
-            //Console.ReadKey();
+            myList.Remove(8);
+            Console.WriteLine();
+
+            myList.Remove(10);
+            Console.WriteLine();
+
+            myList.RemoveAt(2);
+            Console.WriteLine();
+
+            myList.Insert(3, 150);
+            Console.WriteLine();
+
+            myList.IndexOf(150);
+            Console.WriteLine();
+
+            myList.Contains(1);
+            Console.WriteLine();
+
+            myList.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine(myList.Count);
         }
     }
 }
