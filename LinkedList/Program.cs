@@ -11,6 +11,7 @@ namespace LinkedList
 
             CustomList<int> myList = new CustomList<int>(new List<int> { 1, 2, 3, 4, 5 });
             //myList = new CustomList<int>(null);
+
             myList.ElementAdded += (obj,ev) => Console.WriteLine(ev.Message + " " + ev.Value);
             myList.ElementRemoved += (obj, ev) => Console.WriteLine(ev.Message + " " + ev.Value);
             myList.ListCleared += (obj, ev) => Console.WriteLine(ev.Message + " " + ev.Value);
