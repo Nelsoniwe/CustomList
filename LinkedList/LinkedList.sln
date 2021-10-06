@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList.csproj", "{BF3BDD04-83F6-403E-B16C-625E2658FE8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomListLib", "..\CustomListLib\CustomListLib.csproj", "{182D5513-78FB-4ADB-B018-FE67AD1618EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomListLib", "..\CustomListLib\CustomListLib.csproj", "{182D5513-78FB-4ADB-B018-FE67AD1618EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTests", "..\LinkedListTests\LinkedListTests.csproj", "{D57C99B4-0F91-4C48-AF37-1E2D373251CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{182D5513-78FB-4ADB-B018-FE67AD1618EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182D5513-78FB-4ADB-B018-FE67AD1618EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182D5513-78FB-4ADB-B018-FE67AD1618EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57C99B4-0F91-4C48-AF37-1E2D373251CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57C99B4-0F91-4C48-AF37-1E2D373251CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57C99B4-0F91-4C48-AF37-1E2D373251CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57C99B4-0F91-4C48-AF37-1E2D373251CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

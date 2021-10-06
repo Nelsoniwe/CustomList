@@ -21,10 +21,12 @@ D:\visual studio проекты\CustomList\LinkedList\bin\Debug\netcoreapp3.1\Li
 D:\visual studio проекты\CustomList\LinkedList\bin\Debug\netcoreapp3.1\LinkedList.pdb
 D:\visual studio проекты\CustomList\LinkedList\bin\Debug\netcoreapp3.1\CustomListLib.dll
 D:\visual studio проекты\CustomList\LinkedList\bin\Debug\netcoreapp3.1\CustomListLib.pdb
-D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csprojAssemblyReference.cache
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.AssemblyInfoInputs.cache
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.AssemblyInfo.cs
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csproj.CopyComplete
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.dll
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.pdb
 D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.genruntimeconfig.cache
+D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csproj.AssemblyReference.cache
+D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio проекты\CustomList\LinkedList\obj\Debug\netcoreapp3.1\LinkedList.csproj.CoreCompileInputs.cache

@@ -11,8 +11,11 @@ namespace CustomListLib
         private Node<T> tail;
         private int size;
 
-        public delegate void ListEvents(string message);
-        public event ListEvents Notify;
+        public delegate void ListEventHandler(object obj,ListEventArgs<T> args);
+        
+        public event ListEventHandler ElementAdded;
+        public event ListEventHandler ElementRemoved;
+        public event ListEventHandler ListCleared;
 
         /// <summary>
         /// This property sets or gets number on index in CustomList
@@ -51,7 +54,7 @@ namespace CustomListLib
                 }
 
                 current.Data = value;
-                Notify?.Invoke($"Element on index: {index} was changed on {value}");
+                ElementAdded?.Invoke(this, new ListEventArgs<T>(value,"Element Added"));
             }
         }
 
@@ -71,6 +74,11 @@ namespace CustomListLib
         /// <param name="values">array of objects</param>
         public CustomList(params T[] values)
         {
+            if (values == null)
+            {
+                throw new ArgumentNullException();
+            }
+
             foreach (var item in values)
             {
                 this.Add(item);
@@ -111,7 +119,7 @@ namespace CustomListLib
             }
             tail = node;
             size++;
-            Notify?.Invoke($"Element {item} added. The count of List: {size}");
+            ElementAdded?.Invoke(this, new ListEventArgs<T>(item, "Element Added"));
         }
 
 
@@ -123,7 +131,7 @@ namespace CustomListLib
             head = null;
             tail = null;
             size = 0;
-            Notify?.Invoke($"The list was cleared. Size of the list: {Count}.");
+            ListCleared?.Invoke(this, new ListEventArgs<T>("ListCleared"));
         }
 
 
@@ -143,12 +151,10 @@ namespace CustomListLib
             {
                 if (current.Data.Equals(item))
                 {
-                    Notify?.Invoke($"Element '{item}' is found in the list.");
                     return true;
                 }
                 current = current.Next;
             }
-            Notify?.Invoke($"Element '{item}' isn't found in the list.");
             return false;
         }
 
@@ -177,7 +183,6 @@ namespace CustomListLib
                 current = current.Next;
                 arrayIndex++;
             }
-            Notify?.Invoke($"List was coppied to array on {notifyIndex} index");
         }
 
         /// <summary>
@@ -186,7 +191,6 @@ namespace CustomListLib
         public IEnumerator<T> GetEnumerator()
         {
             Node<T> current = head;
-
             while (current != null)
             {
                 yield return current.Data;
@@ -212,7 +216,6 @@ namespace CustomListLib
             {
                 if (current.Data.Equals(item))
                 {
-                    Notify?.Invoke($"Element {current.Data} was found in list on index: {index}");
                     return index;
                 }
 
@@ -257,7 +260,7 @@ namespace CustomListLib
                         newNode.Next = current;
                         head = newNode;
                     }
-                    Notify?.Invoke($"Element {item} was inserted on index: {index}");
+                    ElementAdded?.Invoke(this, new ListEventArgs<T>(item, "ElementAdded"));
                     return;
                 }
                 previous = current;
@@ -301,15 +304,12 @@ namespace CustomListLib
                         }
                     }
                     size--;
-                    Notify?.Invoke($"Element {item} was removed from list, size of the list is: {size}");
+                    ElementRemoved?.Invoke(this, new ListEventArgs<T>(item, "Element Removed"));
                     return true;
                 }
                 previous = current;
                 current = current.Next;
-
-
             }
-            Notify?.Invoke($"Element {item} wasn't removed from list, size of the list is: {size}");
             return false;
         }
 
@@ -347,7 +347,7 @@ namespace CustomListLib
                         }
                     }
                     size--;
-                    Notify?.Invoke($"Element {current.Data} was removed from list on index: {index}, size of the list is: {size}");
+                    ElementRemoved?.Invoke(this, new ListEventArgs<T>(current.Data, "Element Removed"));
                     return;
                 }
                 previous = current;
